@@ -1,9 +1,13 @@
 # Static_Site_in_S3
 Scenario 1: Allow access to all
+
 {
+
     "Version": "2012-10-17",
+    
     "Statement": [
-        {
+
+       {
             "Sid": "PublicReadGetObject",
             "Effect": "Allow",
             "Principal": "*",
@@ -14,13 +18,17 @@ Scenario 1: Allow access to all
 }
 
 
-
 Scenario 2:
 host a static site in s3 with ip based access control
+
 {
+
         "Version": "2012-10-17",
+
         "Id": "IPAllow",
+        
         "Statement": [
+        
             {
                 "Sid": "AllowIPAccess",
                 "Effect": "Allow",
